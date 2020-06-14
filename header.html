@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Header</title>
+</head>
+<style>
+  body {
+    margin: 0px;
+    background-color:  #21C08B;
+  }
+  header {
+    background-color: #21C08B;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header img {
+    margin-left: 0px;
+  }
+  .header_menu{
+    margin-right: 60px;
+  }
+  .header_menu ul{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position:absolute;
+    width: 100px;
+    text-align: right;
+    margin:0px 0px 0px -14px
+  }
+  .header_menu li {
+    margin: 10px 0px;
+  }
+  .header_menu li a{
+    color:white;
+    text-decoration: none;
+  }
+  .header_menu li a:hover {
+    text-decoration: underline;
+  }
+  .header_menu:hover ul, ul:hover{
+    display: block;
+  }
+  .header_menu--profile{
+    display: flex;
+    margin-right: 8px;
+    width: 40px;
+  }
+  .header_menu--profile img{
+    margin-right: 8px;
+    width: 40px;
+  }
+  .header_menu--profile p{
+    margin :0px;
+    color:white;
+  }
+
+ 
+</style>
+<body>
+  <header class="header">
+       <img class="header_img" src="iconoMusical.png" alt="">
+      <div class="header_menu">
+        <div class="header_menu--profile">
+          <img src="iconoInicio.png" alt="">
+          <p>Perfil</p>
+        </div>
+        <ul>
+          <li><a href="">Cuenta</a></li>
+          <li><a href="">Cerrar Sesion</a></li>
+        </ul>
+      </div>
+  </header>
+</body>
+</html>
